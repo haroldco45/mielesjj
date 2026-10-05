@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MielesJJ — Miel 100% natural de Remedios, Antioquia</title>
+<meta name="description" content="Miel 100% natural del apiario MielesJJ en Remedios, Antioquia. Pide la tuya por WhatsApp.">
+<meta name="theme-color" content="#111111">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://haroldco45.github.io/mielesjj/">
+<meta property="og:title" content="MielesJJ — Miel 100% natural">
+<meta property="og:description" content="Del apiario de Remedios, Antioquia, a tu mesa. Pide por WhatsApp.">
+<meta property="og:image" content="https://haroldco45.github.io/mielesjj/panales.jpg">
+<meta property="og:image:secure_url" content="https://haroldco45.github.io/mielesjj/panales.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="309">
+<meta property="og:image:height" content="409">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400;62..125,600;100,800;125,900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --negro:#111111; --negro-2:#1C1A16; --oro:#F5B800; --oro-2:#FFD34D; --miel:#C8790A;
+  --hueso:#FAF6EC; --gris:#6B6458; --linea:rgba(245,184,0,.25);
+  --font:"Archivo", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  box-sizing:border-box;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--hueso);color:var(--negro);font-family:var(--font);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--oro);outline-offset:3px;border-radius:4px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+.top{position:fixed;inset:0 0 auto 0;z-index:20;padding-top:env(safe-area-inset-top,0px);background:rgba(17,17,17,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.top-in{max-width:1140px;margin:0 auto;height:60px;display:flex;align-items:center;gap:10px;padding:0 18px;color:var(--hueso)}
+.marca{display:flex;align-items:center;gap:10px;text-decoration:none}
+.hexi{width:30px;height:34px;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);background:var(--oro);display:grid;place-items:center;color:var(--negro);font-weight:900;font-size:.8rem}
+.marca b{font-weight:900;font-stretch:110%;font-size:1.2rem;letter-spacing:.01em}
+.top nav{margin-left:auto;display:flex;gap:20px}
+.top nav a{text-decoration:none;font-weight:600;font-size:.93rem;color:#d9d2c0}
+.top nav a:hover{color:var(--oro)}
+@media(max-width:760px){.top nav{display:none}}
+
+/* Hero: negro y oro como su marca */
+.hero{background:var(--negro);color:var(--hueso);padding:calc(100px + env(safe-area-inset-top,0px)) 22px 70px;overflow:hidden}
+.hero-in{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center}
+.eti{display:inline-block;color:var(--oro);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.82rem;margin-bottom:14px}
+.hero h1{font-weight:900;font-stretch:115%;font-size:clamp(2.8rem,8.5vw,5.6rem);line-height:.92;margin:0 0 .3em;letter-spacing:-.01em}
+.hero h1 span{color:var(--oro)}
+.hero p{color:#d9d2c0;font-size:clamp(1.05rem,2.4vw,1.25rem);max-width:36ch;margin:0 0 1.6em}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:.5em;font-family:var(--font);font-weight:800;font-size:1rem;text-decoration:none;border:0;cursor:pointer;padding:.95em 1.5em;border-radius:12px;background:var(--oro);color:var(--negro)}
+.btn:hover{background:var(--oro-2)}
+.btn.borde{background:transparent;color:var(--hueso);border:1.5px solid var(--linea)}
+.btn.borde:hover{border-color:var(--oro);color:var(--oro)}
+.btn svg{width:20px;height:20px;flex:none}
+.collage{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.collage img{width:100%;height:100%;object-fit:cover;border-radius:16px}
+.collage .alta{grid-row:span 2}
+.collage img{aspect-ratio:3/4}
+.collage .alta{aspect-ratio:auto}
+@media(max-width:820px){.hero-in{grid-template-columns:1fr}.collage{max-width:520px}}
+
+section{padding:84px 22px}
+.in{max-width:1140px;margin:0 auto}
+h2{font-weight:900;font-stretch:110%;font-size:clamp(2rem,5.5vw,3.3rem);line-height:1;margin:0 0 .45em}
+.lead{font-size:1.12rem;max-width:58ch;margin:0 0 2.2em;color:#3b362d}
+
+/* Del apiario a tu mesa: pasos en hexágono */
+.pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:p}
+.paso{background:#fff;border-radius:18px;overflow:hidden;border:1px solid #e9e1cc}
+.paso img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.paso div{padding:16px 18px 20px}
+.paso h3{margin:0 0 .3em;font-size:1.1rem;font-weight:800;display:flex;align-items:center;gap:10px}
+.paso h3::before{counter-increment:p;content:counter(p);width:26px;height:30px;flex:none;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);background:var(--oro);display:grid;place-items:center;font-size:.8rem;font-weight:900}
+.paso p{margin:0;color:var(--gris);font-size:.97rem}
+@media(max-width:900px){.pasos{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.pasos{grid-template-columns:1fr}}
+
+/* Configurador */
+.config{background:var(--negro);color:var(--hueso)}
+.config h2 span{color:var(--oro)}
+.config .lead{color:#d9d2c0}
+.conf{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+.vista{position:relative;border-radius:20px;overflow:hidden}
+.vista img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:opacity .35s}
+.vista span{position:absolute;left:14px;bottom:14px;background:var(--oro);color:var(--negro);font-weight:800;padding:.35em .9em;border-radius:10px}
+fieldset{border:0;margin:0 0 22px;padding:0}
+legend{font-weight:800;margin-bottom:10px}
+.opc{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.opc label{cursor:pointer}
+.opc input{position:absolute;opacity:0}
+.opc span{display:block;text-align:center;padding:14px 8px;border-radius:12px;border:2px solid var(--linea);font-weight:600;line-height:1.25}
+.opc span small{display:block;font-weight:400;opacity:.75;font-size:.82rem}
+.opc input:checked+span{border-color:var(--oro);background:rgba(245,184,0,.12);color:var(--oro)}
+.opc input:focus-visible+span{outline:3px solid var(--hueso);outline-offset:2px}
+.cant{display:flex;align-items:center;gap:14px}
+.cant button{width:46px;height:46px;border-radius:12px;border:2px solid var(--linea);background:transparent;color:var(--hueso);font-size:1.4rem;cursor:pointer}
+.cant output{font-weight:900;font-size:1.8rem;min-width:2ch;text-align:center}
+.campo{display:grid;gap:6px;margin-bottom:14px}
+.campo input{font:inherit;padding:.8em 1em;border-radius:12px;border:2px solid var(--linea);background:var(--negro-2);color:var(--hueso)}
+.campo input::placeholder{color:#8c8472}
+.nota{font-size:.92rem;color:#bdb5a1;margin:.9em 0 0}
+@media(max-width:820px){.conf{grid-template-columns:1fr}.vista{max-width:440px}}
+
+/* Galería */
+.galeria{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.galeria button{padding:0;border:0;background:none;cursor:zoom-in;border-radius:14px;overflow:hidden}
+.galeria img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .4s}
+.galeria button:hover img{transform:scale(1.04)}
+@media(max-width:820px){.galeria{grid-template-columns:repeat(2,1fr)}}
+dialog{border:0;padding:0;background:transparent;max-width:min(92vw,520px)}
+dialog::backdrop{background:rgba(0,0,0,.85)}
+dialog img{border-radius:16px;width:100%}
+dialog button{margin:12px auto 0;display:block}
+
+/* Videos */
+.videos{background:#F1E9D3}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;align-items:start}
+.ver-mas{grid-column:1/-1}
+.vcard{background:#fff;border-radius:18px;overflow:hidden;border:1px solid #e2d7b8}
+.vcard iframe{width:100%;height:640px;border:0;display:block;background:#fff}
+.vcard a{display:block;padding:14px 18px;font-weight:700;text-decoration:none;border-top:1px solid #eee3c6}
+.ver-mas{background:var(--negro);color:var(--hueso);border-radius:18px;padding:28px}
+.ver-mas h3{margin:0 0 .4em;font-size:1.4rem;font-weight:900;font-stretch:110%}
+.ver-mas p{color:#d9d2c0;margin:0 0 1.2em}
+
+.contacto .lista{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.item{display:block;text-decoration:none;padding:20px;border-radius:16px;background:#fff;border:1px solid #e9e1cc}
+.item b{display:block;font-size:.85rem;color:var(--miel);margin-bottom:4px;letter-spacing:.06em;text-transform:uppercase}
+.item span{font-size:1.1rem;font-weight:800;word-break:break-word}
+
+footer{background:var(--negro);color:#d9d2c0;padding:34px 22px calc(100px + env(safe-area-inset-bottom,0px));text-align:center;font-size:.92rem}
+footer a{color:var(--oro)}
+.flota{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;width:60px;height:60px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.3)}
+.flota svg{width:32px;height:32px;fill:#fff}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <a class="marca" href="#"><span class="hexi">JJ</span><b>MielesJJ</b></a>
+    <nav aria-label="Secciones">
+      <a href="#apiario">El apiario</a>
+      <a href="#pedido">Arma tu pedido</a>
+      <a href="#fotos">Fotos</a>
+      <a href="#videos">Videos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-label="Presentación">
+    <div class="hero-in">
+      <div>
+        <span class="eti">Remedios · Antioquia</span>
+        <h1>Miel <span>100%</span><br>natural</h1>
+        <p>Del apiario en el monte de Remedios a tu mesa. Cosechada por manos de la región, sin mezclas ni rellenos.</p>
+        <div class="btns">
+          <a class="btn" href="#pedido">Arma tu pedido</a>
+          <a class="btn borde" href="#videos">Ver videos</a>
+        </div>
+      </div>
+      <div class="collage">
+        <img class="alta" src="panales.jpg" alt="Dos apicultores con trajes amarillos sosteniendo marcos de panal en el apiario" width="309" height="409">
+        <img src="miel.jpg" alt="Miel espesa cayendo de la llave del tanque" width="308" height="373">
+        <img src="apicultora.jpg" alt="Apicultora sonriente con velo sosteniendo un marco lleno de abejas" width="309" height="412">
+      </div>
+    </div>
+  </section>
+
+  <section id="apiario">
+    <div class="in">
+      <h2>Del apiario a tu mesa</h2>
+      <p class="lead">Así llega la miel de MielesJJ a tu casa: colmenas en el monte, trabajo cuidadoso y cosecha limpia.</p>
+      <div class="pasos">
+        <article class="paso"><img src="apiario.jpg" alt="Colmenas en fila en la ladera del monte" loading="lazy"><div><h3>Las colmenas</h3><p>Viven en el monte de Remedios, rodeadas de flores y bosque.</p></div></article>
+        <article class="paso"><img src="humo.jpg" alt="Apicultores usando el ahumador para revisar las colmenas" loading="lazy"><div><h3>El cuidado</h3><p>Revisamos cada colmena con calma, usando humo para no maltratar a las abejas.</p></div></article>
+        <article class="paso"><img src="panales.jpg" alt="Apicultores mostrando marcos de panal" loading="lazy"><div><h3>La cosecha</h3><p>Sacamos solo los panales listos y dejamos alimento para la colmena.</p></div></article>
+        <article class="paso"><img src="miel.jpg" alt="Miel saliendo del tanque" loading="lazy"><div><h3>A tu frasco</h3><p>La miel se cuela y se envasa pura, tal como sale del panal.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="config" id="pedido">
+    <div class="in">
+      <h2>Arma tu <span>pedido</span></h2>
+      <p class="lead">Elige la presentación y la cantidad. Te confirmamos precio y entrega por WhatsApp.</p>
+      <div class="conf">
+        <div class="vista">
+          <img id="vimg" src="miel.jpg" alt="Miel MielesJJ">
+          <span id="etq">Frasco</span>
+        </div>
+        <form onsubmit="return false">
+          <fieldset>
+            <legend>Presentación</legend>
+            <div class="opc">
+              <label><input type="radio" name="t" value="Frasco de miel" data-img="miel.jpg" checked><span>Frasco<small>para la casa</small></span></label>
+              <label><input type="radio" name="t" value="Miel por cantidad (garrafa)" data-img="apiario.jpg"><span>Por cantidad<small>negocios y familias</small></span></label>
+              <label><input type="radio" name="t" value="Miel en panal" data-img="panales.jpg"><span>En panal<small>si hay cosecha</small></span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Cantidad</legend>
+            <div class="cant">
+              <button type="button" id="menos" aria-label="Quitar uno">−</button>
+              <output id="num" aria-live="polite">1</output>
+              <button type="button" id="mas" aria-label="Agregar uno">+</button>
+            </div>
+          </fieldset>
+          <div class="campo"><label for="nom">Tu nombre</label><input id="nom" autocomplete="name" placeholder="Ej: Carlos Restrepo"></div>
+          <div class="campo"><label for="mun">¿Dónde lo recibes?</label><input id="mun" placeholder="Ej: Remedios, Segovia, Caucasia"></div>
+          <button type="button" class="btn" id="enviar">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
+            Pedir por WhatsApp
+          </button>
+          <p class="nota">Precios, tamaños y envío se confirman en el chat.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="fotos">
+    <div class="in">
+      <h2>Fotos del apiario</h2>
+      <p class="lead">Fotos reales de MielesJJ. Toca una para verla grande.</p>
+      <div class="galeria">
+        <button data-src="apiario.jpg"><img src="apiario.jpg" alt="Colmenas en la ladera" loading="lazy"></button>
+        <button data-src="apicultora.jpg"><img src="apicultora.jpg" alt="Apicultora con marco de abejas" loading="lazy"></button>
+        <button data-src="humo.jpg"><img src="humo.jpg" alt="Revisión de colmenas con ahumador" loading="lazy"></button>
+        <button data-src="panales.jpg"><img src="panales.jpg" alt="Apicultores con panales" loading="lazy"></button>
+        <button data-src="miel.jpg"><img src="miel.jpg" alt="Miel saliendo del tanque" loading="lazy"></button>
+      </div>
+    </div>
+  </section>
+  <dialog id="dlg"><img id="dimg" alt=""><button class="btn" id="cerrar">Cerrar</button></dialog>
+
+  <section class="videos" id="videos">
+    <div class="in">
+      <h2>Míranos trabajar</h2>
+      <p class="lead">Publicaciones y videos reales de nuestro Instagram @mielesjj.</p>
+      <div class="vgrid">
+        <div class="vcard">
+          <iframe src="https://www.instagram.com/p/DP2q8jmjRbE/embed" title="Publicación de MielesJJ en Instagram" loading="lazy" allowfullscreen></iframe>
+          <a href="https://www.instagram.com/mielesjj/p/DP2q8jmjRbE/" target="_blank" rel="noopener">Abrir en Instagram</a>
+        </div>
+        <div class="vcard">
+          <iframe src="https://www.instagram.com/reel/DP2nMHBjcVq/embed" title="Video de MielesJJ en Instagram" loading="lazy" allowfullscreen></iframe>
+          <a href="https://www.instagram.com/reel/DP2nMHBjcVq/" target="_blank" rel="noopener">Abrir el video en Instagram</a>
+        </div>
+        <div class="ver-mas">
+          <h3>Más videos en Instagram</h3>
+          <p>Cosechas, revisión de colmenas y la miel recién salida del panal. Síguenos para ver todo el proceso.</p>
+          <a class="btn" href="https://www.instagram.com/mielesjj/" target="_blank" rel="noopener">Ir a @mielesjj</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <div class="in">
+      <h2>Hablemos</h2>
+      <p class="lead">Escríbenos para pedidos, ventas por cantidad o visitas al apiario.</p>
+      <div class="lista">
+        <a class="item" id="c-wa" target="_blank" rel="noopener"><b>WhatsApp</b><span id="c-wa-t"></span></a>
+        <a class="item" id="c-tel"><b>Llamar</b><span id="c-tel-t"></span></a>
+        <a class="item" href="https://www.instagram.com/mielesjj/" target="_blank" rel="noopener"><b>Instagram</b><span>@mielesjj</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>MielesJJ · Miel 100% natural · Remedios, Antioquia, Colombia</p>
+  <p>App hecha por <a href="https://wa.me/573117700431" target="_blank" rel="noopener">Vibras Positivas HM</a> · 311 770 0431</p>
+  <p id="hora"></p>
+</footer>
+
+<a class="flota" id="flota" target="_blank" rel="noopener" aria-label="Escribir a MielesJJ por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
+</a>
+
+<script>
+/* ===== CAMBIA AQUÍ EL NÚMERO DE MIELESJJ (10 dígitos, sin espacios) ===== */
+const CELULAR = "3117700431";
+/* ======================================================================= */
+const WA = "57" + CELULAR;
+const bonito = CELULAR.replace(/(\d{3})(\d{3})(\d{4})/, "$1 $2 $3");
+const saludo = encodeURIComponent("Hola MielesJJ 🍯, quiero información sobre la miel");
+document.getElementById("c-wa").href = `https://wa.me/${WA}?text=${saludo}`;
+document.getElementById("c-wa-t").textContent = bonito;
+document.getElementById("c-tel").href = `tel:+${WA}`;
+document.getElementById("c-tel-t").textContent = bonito;
+document.getElementById("flota").href = `https://wa.me/${WA}?text=${saludo}`;
+
+let n = 1;
+const num = document.getElementById("num"), vimg = document.getElementById("vimg"), etq = document.getElementById("etq");
+document.getElementById("mas").onclick = () => { if (n < 100) num.textContent = ++n; };
+document.getElementById("menos").onclick = () => { if (n > 1) num.textContent = --n; };
+document.querySelectorAll('input[name="t"]').forEach(r => r.addEventListener("change", () => {
+  vimg.style.opacity = 0;
+  setTimeout(() => { vimg.src = r.dataset.img; vimg.style.opacity = 1; }, 200);
+  etq.textContent = r.parentElement.querySelector("span").firstChild.textContent;
+}));
+document.getElementById("enviar").onclick = () => {
+  const t = document.querySelector('input[name="t"]:checked').value;
+  const nom = document.getElementById("nom").value.trim();
+  const mun = document.getElementById("mun").value.trim();
+  const ahora = new Date().toLocaleString("es-CO", { timeZone: "America/Bogota", dateStyle: "medium", timeStyle: "short" });
+  let msg = `Hola MielesJJ 🍯, quiero hacer un pedido:\n• ${t} x ${n}`;
+  if (nom) msg += `\n• Nombre: ${nom}`;
+  if (mun) msg += `\n• Entrega en: ${mun}`;
+  msg += `\n¿Me confirman precio y envío? (${ahora}, hora de Colombia)`;
+  window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, "_blank");
+};
+
+const dlg = document.getElementById("dlg"), dimg = document.getElementById("dimg");
+document.querySelectorAll(".galeria button").forEach(b => b.onclick = () => {
+  dimg.src = b.dataset.src; dimg.alt = b.querySelector("img").alt; dlg.showModal();
+});
+document.getElementById("cerrar").onclick = () => dlg.close();
+dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
+
+document.getElementById("hora").textContent = "Hora de Colombia: " +
+  new Date().toLocaleString("es-CO", { timeZone: "America/Bogota", dateStyle: "full", timeStyle: "short" });
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
+</script>
+</body>
+</html>
